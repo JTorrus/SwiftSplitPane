@@ -64,5 +64,59 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
+        <!--Job Description View Controller-->
+        <scene sceneID="UcD-tr-Kbh">
+            <objects>
+                <viewController id="Mfz-I6-nhb" customClass="JobDescriptionViewController" customModule="ProfessionalFutureLSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3CZ-eW-GcG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-xY-PeK">
+                                <rect key="frame" x="16" y="36" width="343" height="304"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-jU-YTW">
+                                <rect key="frame" x="16" y="348" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="weo-l8-GhM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descripcion" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nv1-vh-5ta">
+                                <rect key="frame" x="16" y="406" width="343" height="241"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="Adf-aw-JGX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nv1-vh-5ta" secondAttribute="bottom" constant="20" symbolic="YES" id="3ac-7T-7zb"/>
+                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="3nW-jU-YTW" secondAttribute="trailing" constant="16" id="CLo-lv-WxZ"/>
+                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="JMg-xY-PeK" secondAttribute="trailing" constant="16" id="Cla-9f-G2C"/>
+                            <constraint firstItem="nv1-vh-5ta" firstAttribute="trailing" secondItem="3nW-jU-YTW" secondAttribute="trailing" id="Fob-Dq-CaT"/>
+                            <constraint firstItem="3nW-jU-YTW" firstAttribute="top" secondItem="JMg-xY-PeK" secondAttribute="bottom" constant="8" id="Sgd-p2-YBK"/>
+                            <constraint firstItem="JMg-xY-PeK" firstAttribute="top" secondItem="5NR-Wb-xB7" secondAttribute="top" constant="16" id="aDL-5B-yDy"/>
+                            <constraint firstItem="3nW-jU-YTW" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="fFo-jZ-Jgu"/>
+                            <constraint firstItem="JMg-xY-PeK" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="fPp-Up-KXC"/>
+                            <constraint firstItem="nv1-vh-5ta" firstAttribute="top" secondItem="3nW-jU-YTW" secondAttribute="bottom" constant="8" symbolic="YES" id="iPd-X4-HKh"/>
+                            <constraint firstItem="3nW-jU-YTW" firstAttribute="top" secondItem="JMg-xY-PeK" secondAttribute="bottom" constant="8" id="q7T-V2-fXO"/>
+                            <constraint firstItem="nv1-vh-5ta" firstAttribute="leading" secondItem="3nW-jU-YTW" secondAttribute="leading" id="vGi-gt-PDz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5NR-Wb-xB7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrQ-fK-IIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.79999999999995" y="118.29085457271366"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="dev.jpg" width="1024" height="1024"/>
+    </resources>
 </document>
