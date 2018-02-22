@@ -49,11 +49,11 @@
 		EFFC1A1B203F0EFB004130FB /* ProfessionalFutureLSGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfessionalFutureLSGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFC1A1F203F0EFB004130FB /* ProfessionalFutureLSGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalFutureLSGUITests.swift; sourceTree = "<group>"; };
 		EFFC1A21203F0EFB004130FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFFC1A34203F18FB004130FB /* pmanager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pmanager.png; sourceTree = "<group>"; };
-		EFFC1A35203F18FB004130FB /* dev.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dev.jpg; sourceTree = "<group>"; };
-		EFFC1A36203F18FB004130FB /* designer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = designer.jpg; sourceTree = "<group>"; };
 		EFFC1A37203F1A0B004130FB /* JobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionViewController.swift; sourceTree = "<group>"; };
 		EFFC1A39203F1B3F004130FB /* Professional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional.swift; sourceTree = "<group>"; };
+		EFFC1A42203F2338004130FB /* pmanager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pmanager.png; sourceTree = "<group>"; };
+		EFFC1A43203F2338004130FB /* dev.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dev.jpg; sourceTree = "<group>"; };
+		EFFC1A44203F2338004130FB /* designer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = designer.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		EFFC19FE203F0EFA004130FB /* ProfessionalFutureLSG */ = {
 			isa = PBXGroup;
 			children = (
-				EFFC1A33203F18FB004130FB /* img */,
+				EFFC1A41203F2338004130FB /* img */,
 				EFFC19FF203F0EFA004130FB /* AppDelegate.swift */,
 				EFFC1A01203F0EFA004130FB /* WantedToBeViewController.swift */,
 				EFFC1A37203F1A0B004130FB /* JobDescriptionViewController.swift */,
@@ -135,12 +135,12 @@
 			path = ProfessionalFutureLSGUITests;
 			sourceTree = "<group>";
 		};
-		EFFC1A33203F18FB004130FB /* img */ = {
+		EFFC1A41203F2338004130FB /* img */ = {
 			isa = PBXGroup;
 			children = (
-				EFFC1A36203F18FB004130FB /* designer.jpg */,
-				EFFC1A35203F18FB004130FB /* dev.jpg */,
-				EFFC1A34203F18FB004130FB /* pmanager.png */,
+				EFFC1A44203F2338004130FB /* designer.jpg */,
+				EFFC1A43203F2338004130FB /* dev.jpg */,
+				EFFC1A42203F2338004130FB /* pmanager.png */,
 			);
 			path = img;
 			sourceTree = "<group>";

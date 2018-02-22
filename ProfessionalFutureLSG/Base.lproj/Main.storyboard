@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bkE-b1-2Ig">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Wanted To Be View Controller-->
+        <!--Split View Controller-->
+        <scene sceneID="RUg-kB-qPu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lZ-v3-FFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <splitViewController id="bkE-b1-2Ig" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="nd4-h0-Sls" kind="relationship" relationship="masterViewController" id="KUk-wF-gpm"/>
+                        <segue destination="Mfz-I6-nhb" kind="relationship" relationship="detailViewController" id="GPK-Cq-mzT"/>
+                    </connections>
+                </splitViewController>
+            </objects>
+            <point key="canvasLocation" x="-630" y="118"/>
+        </scene>
+        <!--Professional-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WantedToBeViewController" customModule="ProfessionalFutureLSG" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to be?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NE4-V7-mge">
-                                <rect key="frame" x="16" y="36" width="343" height="36"/>
+                                <rect key="frame" x="16" y="80" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,11 +41,17 @@
                                 <rect key="frame" x="16" y="366" width="343" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Project Manager"/>
+                                <connections>
+                                    <segue destination="Mfz-I6-nhb" kind="showDetail" identifier="managerSegue" id="G5R-MR-XPS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOS-j1-IUT">
                                 <rect key="frame" x="122" y="313" width="131" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="UX Designer"/>
+                                <connections>
+                                    <segue destination="Mfz-I6-nhb" kind="showDetail" identifier="designerSegue" id="zuV-tZ-Sa5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z26-b5-MzU">
                                 <rect key="frame" x="16" y="250" width="343" height="50"/>
@@ -41,6 +60,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Developer"/>
+                                <connections>
+                                    <segue destination="Mfz-I6-nhb" kind="showDetail" identifier="devSegue" id="edf-yE-p6M"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,10 +81,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Professional" id="DwK-h0-95b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="1004" y="-228"/>
         </scene>
         <!--Job Description View Controller-->
         <scene sceneID="UcD-tr-Kbh">
@@ -73,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-xY-PeK">
-                                <rect key="frame" x="16" y="36" width="343" height="304"/>
+                                <rect key="frame" x="16" y="80" width="343" height="260"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-jU-YTW">
                                 <rect key="frame" x="16" y="348" width="343" height="50"/>
@@ -116,10 +139,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrQ-fK-IIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792.79999999999995" y="118.29085457271366"/>
+            <point key="canvasLocation" x="158" y="485"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="etk-63-IGP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nd4-h0-Sls" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze0-Dn-W1u">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="I2X-YD-0r8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayB-cc-gpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158.40000000000001" y="-227.58620689655174"/>
         </scene>
     </scenes>
     <resources>
         <image name="dev.jpg" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="edf-yE-p6M"/>
+    </inferredMetricsTieBreakers>
 </document>
