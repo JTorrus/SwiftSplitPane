@@ -15,6 +15,7 @@
 		EFFC1A15203F0EFB004130FB /* ProfessionalFutureLSGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC1A14203F0EFB004130FB /* ProfessionalFutureLSGTests.swift */; };
 		EFFC1A20203F0EFB004130FB /* ProfessionalFutureLSGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC1A1F203F0EFB004130FB /* ProfessionalFutureLSGUITests.swift */; };
 		EFFC1A38203F1A0B004130FB /* JobDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC1A37203F1A0B004130FB /* JobDescriptionViewController.swift */; };
+		EFFC1A3A203F1B3F004130FB /* Professional.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC1A39203F1B3F004130FB /* Professional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EFFC1A35203F18FB004130FB /* dev.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dev.jpg; sourceTree = "<group>"; };
 		EFFC1A36203F18FB004130FB /* designer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = designer.jpg; sourceTree = "<group>"; };
 		EFFC1A37203F1A0B004130FB /* JobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionViewController.swift; sourceTree = "<group>"; };
+		EFFC1A39203F1B3F004130FB /* Professional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EFFC19FF203F0EFA004130FB /* AppDelegate.swift */,
 				EFFC1A01203F0EFA004130FB /* WantedToBeViewController.swift */,
 				EFFC1A37203F1A0B004130FB /* JobDescriptionViewController.swift */,
+				EFFC1A39203F1B3F004130FB /* Professional.swift */,
 				EFFC1A03203F0EFA004130FB /* Main.storyboard */,
 				EFFC1A06203F0EFA004130FB /* Assets.xcassets */,
 				EFFC1A08203F0EFA004130FB /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 			files = (
 				EFFC1A02203F0EFA004130FB /* WantedToBeViewController.swift in Sources */,
 				EFFC1A00203F0EFA004130FB /* AppDelegate.swift in Sources */,
+				EFFC1A3A203F1B3F004130FB /* Professional.swift in Sources */,
 				EFFC1A38203F1A0B004130FB /* JobDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
