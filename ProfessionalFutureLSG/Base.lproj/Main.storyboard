@@ -32,8 +32,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to be?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NE4-V7-mge">
-                                <rect key="frame" x="16" y="80" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="16" y="80" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -96,22 +96,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pmanager.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-xY-PeK">
-                                <rect key="frame" x="16" y="80" width="343" height="260"/>
+                                <rect key="frame" x="16" y="80" width="343" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="eMt-ww-PBw"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-jU-YTW">
-                                <rect key="frame" x="16" y="348" width="343" height="50"/>
+                                <rect key="frame" x="16" y="267" width="343" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="weo-l8-GhM"/>
+                                    <constraint firstAttribute="height" constant="50" id="Rmg-Zq-b1W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descripcion" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nv1-vh-5ta">
-                                <rect key="frame" x="16" y="406" width="343" height="241"/>
+                                <rect key="frame" x="16" y="325" width="343" height="270"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="241" id="Adf-aw-JGX"/>
+                                    <constraint firstAttribute="height" constant="270" id="bqX-oS-1vK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -119,17 +122,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="nv1-vh-5ta" secondAttribute="bottom" constant="20" symbolic="YES" id="3ac-7T-7zb"/>
-                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="3nW-jU-YTW" secondAttribute="trailing" constant="16" id="CLo-lv-WxZ"/>
-                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="JMg-xY-PeK" secondAttribute="trailing" constant="16" id="Cla-9f-G2C"/>
-                            <constraint firstItem="nv1-vh-5ta" firstAttribute="trailing" secondItem="3nW-jU-YTW" secondAttribute="trailing" id="Fob-Dq-CaT"/>
-                            <constraint firstItem="3nW-jU-YTW" firstAttribute="top" secondItem="JMg-xY-PeK" secondAttribute="bottom" constant="8" id="Sgd-p2-YBK"/>
-                            <constraint firstItem="JMg-xY-PeK" firstAttribute="top" secondItem="5NR-Wb-xB7" secondAttribute="top" constant="16" id="aDL-5B-yDy"/>
-                            <constraint firstItem="3nW-jU-YTW" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="fFo-jZ-Jgu"/>
-                            <constraint firstItem="JMg-xY-PeK" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="fPp-Up-KXC"/>
-                            <constraint firstItem="nv1-vh-5ta" firstAttribute="top" secondItem="3nW-jU-YTW" secondAttribute="bottom" constant="8" symbolic="YES" id="iPd-X4-HKh"/>
-                            <constraint firstItem="3nW-jU-YTW" firstAttribute="top" secondItem="JMg-xY-PeK" secondAttribute="bottom" constant="8" id="q7T-V2-fXO"/>
-                            <constraint firstItem="nv1-vh-5ta" firstAttribute="leading" secondItem="3nW-jU-YTW" secondAttribute="leading" id="vGi-gt-PDz"/>
+                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="JMg-xY-PeK" secondAttribute="trailing" constant="16" id="4UC-fv-gKA"/>
+                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="3nW-jU-YTW" secondAttribute="trailing" constant="16" id="FpM-Qj-aL4"/>
+                            <constraint firstItem="JMg-xY-PeK" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="INc-np-zaR"/>
+                            <constraint firstItem="3nW-jU-YTW" firstAttribute="top" secondItem="JMg-xY-PeK" secondAttribute="bottom" constant="8" id="NlG-gc-T9O"/>
+                            <constraint firstItem="nv1-vh-5ta" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="fqo-23-Exs"/>
+                            <constraint firstItem="JMg-xY-PeK" firstAttribute="top" secondItem="5NR-Wb-xB7" secondAttribute="top" constant="16" id="j63-aK-zhQ"/>
+                            <constraint firstItem="3nW-jU-YTW" firstAttribute="leading" secondItem="5NR-Wb-xB7" secondAttribute="leading" constant="16" id="oMR-NW-xFx"/>
+                            <constraint firstItem="nv1-vh-5ta" firstAttribute="top" secondItem="3nW-jU-YTW" secondAttribute="bottom" constant="8" id="q4h-5J-NRv"/>
+                            <constraint firstItem="5NR-Wb-xB7" firstAttribute="trailing" secondItem="nv1-vh-5ta" secondAttribute="trailing" constant="16" id="wLn-8t-Oyx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5NR-Wb-xB7"/>
                     </view>
@@ -142,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrQ-fK-IIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="484"/>
+            <point key="canvasLocation" x="981.60000000000002" y="483.50824587706148"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="etk-63-IGP">
@@ -185,6 +186,6 @@
         <image name="pmanager.png" width="683" height="601"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zuV-tZ-Sa5"/>
+        <segue reference="G5R-MR-XPS"/>
     </inferredMetricsTieBreakers>
 </document>

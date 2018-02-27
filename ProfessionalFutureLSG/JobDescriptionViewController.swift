@@ -1,10 +1,6 @@
 //
 //  JobDescriptionViewController.swift
 //  ProfessionalFutureLSG
-//
-//  Created by Alumne on 22/2/18.
-//  Copyright © 2018 Alumne. All rights reserved.
-//
 
 import UIKit
 
@@ -14,6 +10,7 @@ class JobDescriptionViewController: UIViewController {
     @IBOutlet weak var salaryDisplay: UILabel!
     
     var professionalToDisplay: Professional?
+    var professionalWhenNoSelection: Professional = Professional(title: "Developer", imageName: "dev.jpg", salary: "15000€", description: "Being a developer is great and fun")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +20,11 @@ class JobDescriptionViewController: UIViewController {
             self.imageView.image = UIImage(named: currentProfessional.imageName)
             self.descDisplay.text = currentProfessional.description
             self.salaryDisplay.text = currentProfessional.salary
+        } else {
+            self.navigationItem.title = professionalWhenNoSelection.title
+            self.imageView.image = UIImage(named: professionalWhenNoSelection.imageName)
+            self.descDisplay.text = professionalWhenNoSelection.description
+            self.salaryDisplay.text = professionalWhenNoSelection.salary
         }
     }
 
