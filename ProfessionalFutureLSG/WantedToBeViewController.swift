@@ -11,9 +11,9 @@ import UIKit
 class WantedToBeViewController: UIViewController {
 
     let professionals = [
-        "devSegue": Professional(title: "Developer", imageName: "dev", salary: "15000", description: "Being a developer is great and fun"),
-        "designerSegue": Professional(title: "UX Designer", imageName: "designer", salary: "7500", description: "A designer makes everything prettier"),
-        "managerSegue": Professional(title: "Project Manager", imageName: "pmanager", salary: "30000", description: "A project manager leads the way to success")
+        "devSegue": Professional(title: "Developer", imageName: "dev.jpg", salary: "15000€", description: "Being a developer is great and fun"),
+        "designerSegue": Professional(title: "UX Designer", imageName: "designer.jpg", salary: "7500€", description: "A designer makes everything prettier"),
+        "managerSegue": Professional(title: "Project Manager", imageName: "pmanager.png", salary: "30000€", description: "A project manager leads the way to success")
     ]
     
     override func viewDidLoad() {
@@ -27,11 +27,14 @@ class WantedToBeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let jobDescViewCont = segue.destination as? JobDescriptionViewController {
-            if let segueId = segue.identifier {
-                jobDescViewCont.professionalToDisplay = professionals[segueId]
+        if let navigationCont = segue.destination as? UINavigationController {
+            if let jobDescViewCont = navigationCont.visibleViewController as? JobDescriptionViewController {
+                if let segueId = segue.identifier {
+                    jobDescViewCont.professionalToDisplay = professionals[segueId]
+                }
             }
         }
+        
     }
 }
 

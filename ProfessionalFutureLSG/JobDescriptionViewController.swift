@@ -10,6 +10,8 @@ import UIKit
 
 class JobDescriptionViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var descDisplay: UITextView!
+    @IBOutlet weak var salaryDisplay: UILabel!
     
     var professionalToDisplay: Professional?
     
@@ -17,7 +19,10 @@ class JobDescriptionViewController: UIViewController {
         super.viewDidLoad()
         
         if let currentProfessional = professionalToDisplay {
+            self.navigationItem.title = currentProfessional.title
             self.imageView.image = UIImage(named: currentProfessional.imageName)
+            self.descDisplay.text = currentProfessional.description
+            self.salaryDisplay.text = currentProfessional.salary
         }
     }
 

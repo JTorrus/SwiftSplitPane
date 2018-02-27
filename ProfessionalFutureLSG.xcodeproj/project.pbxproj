@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669F4B5C2044F0280065F23A /* designer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFFC1A44203F2338004130FB /* designer.jpg */; };
+		669F4B5D2044F0360065F23A /* dev.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFFC1A43203F2338004130FB /* dev.jpg */; };
+		669F4B5E2044F0390065F23A /* pmanager.png in Resources */ = {isa = PBXBuildFile; fileRef = EFFC1A42203F2338004130FB /* pmanager.png */; };
 		EFFC1A00203F0EFA004130FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC19FF203F0EFA004130FB /* AppDelegate.swift */; };
 		EFFC1A02203F0EFA004130FB /* WantedToBeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC1A01203F0EFA004130FB /* WantedToBeViewController.swift */; };
 		EFFC1A05203F0EFA004130FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC1A03203F0EFA004130FB /* Main.storyboard */; };
@@ -252,6 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669F4B5C2044F0280065F23A /* designer.jpg in Resources */,
+				669F4B5D2044F0360065F23A /* dev.jpg in Resources */,
+				669F4B5E2044F0390065F23A /* pmanager.png in Resources */,
 				EFFC1A0A203F0EFA004130FB /* LaunchScreen.storyboard in Resources */,
 				EFFC1A07203F0EFA004130FB /* Assets.xcassets in Resources */,
 				EFFC1A05203F0EFA004130FB /* Main.storyboard in Resources */,
