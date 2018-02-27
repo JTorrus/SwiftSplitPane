@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WantedToBeViewController: UIViewController {
+class WantedToBeViewController: UIViewController, UISplitViewControllerDelegate {
 
     let professionals = [
         "devSegue": Professional(title: "Developer", imageName: "dev.jpg", salary: "15000€", description: "Being a developer is great and fun"),
@@ -20,10 +20,25 @@ class WantedToBeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.splitViewController?.delegate = self
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        if let navigationCont = primaryViewController as? UINavigationController {
+            if navigationCont.visibleViewController != nil {
+                return true
+            }
+        }
+        
+        return false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
